@@ -10,10 +10,9 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Descomprimir carpetas
-        run: |
-          unzip -o menu.zip -d menu
-          unzip -o niveles.zip -d niveles
-          rm menu.zip niveles.zip
+         run: |
+           unzip -o res.zip -d res
+           rm res.zip
       
       - name: Setup Godot 4.6.3
         uses: chickensoft-games/setup-godot@v1
